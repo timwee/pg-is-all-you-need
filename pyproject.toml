@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pg-is-all-you-need"
+version = "0.1.0"
+description = ""
+authors = ["Tim Wee <tim.shawn@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pg_is_all_you_need"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gym = "^0.26.2"
+matplotlib = "^3.7.1"
+torch = "^2.0.0"
+gymnasium = {extras = ["classic-control"], version = "^0.28.1"}
+jsanimation = "^0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.33.0"
+isort = "^5.12.0"
+nbdime = "^3.2.1"
+jupyter-nbextensions-configurator = "^0.6.2"
+jupyter-contrib-nbextensions = "^0.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
